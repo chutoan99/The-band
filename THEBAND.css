@@ -1,0 +1,361 @@
+/* reset  */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html
+{
+    font-family: Arial, Helvetica, sans-serif;
+}
+main{
+    overflow: hidden;
+}
+  /* khi div cha không ôm các thẻ div con thì sử dụng .Clear   */
+.Clear
+{
+    clear: both;
+}
+/* thẻ nào chứa class này sẽ dc thừa hưởng */
+.Text-White
+{
+    color: white;
+}
+#Header
+{
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+    background-color: black;
+    height: 46px;
+    /* làm thanh điều hướng nổi lên */
+    z-index: 1;
+}
+/* thanh điều hướng */
+#nav
+{
+    display: inline-block;
+}
+#nav >li 
+{
+    display: block;
+    float: left;
+    position: relative;
+}
+#nav >li >a
+{
+    color: white;
+}
+#nav li a
+{
+    text-decoration: none;
+    line-height: 46px;
+    padding: 0 24px;
+    display: block;
+    text-transform: uppercase;
+}
+/* thanh điều hướng */
+
+/* thanh điều hướng con */
+#nav .subnav
+{
+    position: absolute;
+    background-color: white;
+    list-style: none;
+    display: none;
+    min-width: 160px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+#nav .subnav li
+{
+    font-size: 21px;
+    line-height: 38px;
+    padding: 0 12px;
+}
+ /* thanh điều hướg con */
+
+/* icon */
+#nav .nav-arrow-down
+{
+    font-size: 14px;
+}
+.search-btn
+{
+    float: right;
+    line-height: 46px;
+    padding: 0 21px;
+    font-size: 20px;
+    color: white;
+}
+/* hieu ứng di chuột */
+
+#nav .subnav li:hover,
+#nav > li:hover >a
+{
+    background-color: #ccc;
+    color: black;
+}
+#nav li:hover .subnav 
+{
+    display: block;
+}
+.search-btn:hover
+{
+    background-color: #f44336;
+    cursor: pointer;
+}
+/* hiệu ứng di chuột */
+
+/* chỉnh ảnh */
+#Slider
+{
+    margin-top: 28px;
+    padding-top: 50%;
+    background: url(Img/Slider1.jpg);
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover;
+    position: relative;
+}
+#Slider .Text-content
+{
+    position: absolute;
+    bottom: 47px;
+    width: 100%;
+    color: white;
+    text-align: center;
+}
+#Slider .Text-heading
+{
+    font-weight: 500;
+    font-size: 24px;
+}
+#Slider .Text-descripsion
+{
+    font-size: 15px;
+    margin-top: 25px;
+}
+/* chỉnh ảnh */
+
+/* phần giới thiệu */
+#Content .Content-section
+{
+    width: 800px;
+    max-width: 100%;
+    padding: 64px 0;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#Content .Section-heading
+{
+    font-weight: 500;
+    font-size: 30px;
+    text-align: center;
+    letter-spacing: 4px;
+}
+#Content .Section-Sub-Heading
+{
+    font-size: 15px;
+    text-align: center;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    font-style: italic;
+    opacity: 0.6;
+}
+#Content .About-Text
+{
+    font-size: 15px;
+    line-height: 1.4;
+    text-align: justify;
+}
+/* phần giới thiệu */
+
+/* phần các thành viên */
+.Member-list
+{
+    margin-top: 48px;
+}
+#Content .Member-item
+{
+    float: left;
+    text-align: center;
+    width: 33.33333%;
+}
+#Content .Member-Name 
+{
+    font-size: 15px;
+    margin-bottom: 15px;
+}
+#Content .Member-img
+{
+    width: 154px;
+    border-radius: 4px;
+}
+/* phần các thành viên */
+
+/* phần bán vé */
+.Tour-Section
+{
+    background-color: black;
+    width: 100%;
+}
+.Tikket-list
+{
+    background-color: white;
+}
+.Tikket-list li
+{
+    font-size: 15px;
+    padding: 11px 16px;
+    border-bottom: solid #ddd 0.5px;
+    color: #757575;
+    list-style: none;
+}
+.Sold-Out
+{
+    background-color: #f44336;
+    padding: 0 8px;
+    margin-left: 16px;
+    color: white;
+}
+.Quantity
+{
+    float: right;
+    margin-right: 8px;
+    margin-top: -2px;
+    background-color: black;
+    border-radius: 50%;
+    color: white;
+    width: 24px;
+    line-height: 24px;
+    text-align: center;
+}
+/* phần bán vé */
+
+/* phần địa diểm */
+.Place
+{
+    margin: 32px 0;
+    margin-left: -8px;
+    margin-right: -8px;
+}
+.place-item
+{
+    padding: 0 8px;
+    float: left;
+    width: 33.3333333%;
+}
+.place-content
+{
+    background-color: white;
+    padding: 0 16px;
+}
+.place-heading
+{
+    font-size: 15px;
+    font-weight: 600;
+    padding-top: 15px;
+}
+.place-time
+{
+    font-size: 15px;
+    padding-top: 15px;
+    font-style: italic;
+    opacity: 0.6;
+}
+.place-discription
+{
+    font-size: 15px;
+    padding-top: 15px;
+    line-height: 1.4;
+    
+}
+.Place-img
+{
+    width: 100%;
+    max-width: 100%;
+    display: block;
+}
+.Contact-section
+{
+    padding-left: -8px;
+    padding-right: -8px;
+    margin-top: 48px;
+}
+.form-control 
+{
+    padding: 10px;
+    border: #ccc solid 1px;
+}
+.contact-icon
+{
+    width: 50%;
+    float: left;
+    line-height: 1.5;
+}
+.contact-icon i
+{
+    font-size: 18px;
+    width: 30px;
+    display: inline-block;
+}
+.full-right
+{
+    float: right;
+    padding: 10px 0 !important;
+    margin-top: 5px; 
+    margin-right: 0px !important;
+
+}
+.Buy-Tikket
+{
+    background-color: black;
+    color: white;
+    font-size: 15px;
+    border: none;
+    padding: 8px;
+    margin: 8px;
+}
+.contact-form
+{
+    display: inline-block;
+    width: 400px;
+}
+.haft input
+{
+    width: 50%;
+    float: left;
+}
+.width100
+{
+    width: 100%;
+}
+/* phần contact */
+
+#Footer
+{
+    padding: 64px 16px;
+    text-align: center;
+    font-size: 15px;
+}
+#Footer .Footer-icont
+{
+    font-size: 24px;
+    opacity: 0.7;
+}
+#Footer .Footer-icont i:hover
+{
+    opacity: 0.3;
+}
+#Footer .Footer-heding
+{
+    padding: 15px 0;
+    opacity: 0.7;
+}
+#Footer .w3-chool
+{
+    font-style: italic;
+}
+/* phần contact */
